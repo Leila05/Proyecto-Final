@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Proyecto Final</title>
+</head>
+
+<body>
+    <h1>Productos sobrantes</h1>
+    <h2>Agregar nuevo producto</h2>
+
+    <div id="form-box">
+        <form>
+
+            <div>
+                <span>Fecha:</span> <input type="date" class="input" id="fecha">
+            </div>
+
+            <div>
+                <span>Descripcion:</span> <input type="text" id="detalle" class="input" placeholder="">
+            </div>
+
+            <div>
+                <span>Cantidad:</span> <input type="number" class="input" id="cant" placeholder="¿Cuánto sobra?">
+            </div>
+
+        </form>
+    </div>
+
+    <div id="items"></div>
+
+    <div id="button" class="button" onclick="registrar()">Registrar producto</div>
+    &nbsp;
+    <div id="button2" class="button" onclick="location.href='index-listar.html'">Listar producto</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
